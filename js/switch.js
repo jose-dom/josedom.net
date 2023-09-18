@@ -26,6 +26,7 @@
       element.className = element.className.replace(/link-dark/, 'text-white');
     });
 
+
     document.body.classList.add('bg-dark');
 
     if (document.body.classList.contains('text-dark')) {
@@ -33,6 +34,22 @@
     } else {
       document.body.classList.add('text-white');
     }
+
+    document.querySelectorAll('.svg-border-rounded').forEach((element) => {
+      element.className = element.className.replace(/text-white/, 'text-dark');
+    });
+
+    document.querySelectorAll('.nav-text').forEach((element) => {
+      element.className = element.className.replace(/text-dark/, 'text-white');
+    });
+
+    document.querySelectorAll('.form-text').forEach((element) => {
+      element.className = element.className.replace(/text-white/, 'text-dark');
+    });
+
+    document.querySelectorAll('.resume-text').forEach((element) => {
+      element.className = element.className.replace(/text-white/, 'text-dark');
+    });
 
     // Tables
     var tables = document.querySelectorAll('table');
@@ -57,10 +74,6 @@
       element.className = element.className.replace(/-dark/g, '-white');
     });
 
-    document.querySelectorAll('.text-dark').forEach((element) => {
-      element.className = element.className.replace(/text-dark/, 'link-white');
-    });
-
     document.body.classList.add('bg-white');
 
     if (document.body.classList.contains('text-white')) {
@@ -69,11 +82,25 @@
       document.body.classList.add('text-dark');
     }
 
-    if (document.body.classList.contains('text-dark')) {
-      document.body.classList.replace('text-dark', 'text-white');
-    } else {
-      document.body.classList.add('text-white');
-    }
+    document.querySelectorAll('.text-white').forEach((element) => {
+      element.className = element.className.replace(/text-dark/, 'text-dark');
+    });
+
+    document.querySelectorAll('.svg-border-rounded').forEach((element) => {
+      element.className = element.className.replace(/text-dark/, 'text-white');
+    });
+
+    document.querySelectorAll('.nav-text').forEach((element) => {
+      element.className = element.className.replace(/text-white/, 'text-dark');
+    });
+
+    document.querySelectorAll('.form-text').forEach((element) => {
+      element.className = element.className.replace(/text-white/, 'text-dark');
+    });
+
+    document.querySelectorAll('.resume-text').forEach((element) => {
+      element.className = element.className.replace(/text-white/, 'text-dark');
+    });
 
     // Tables
     var tables = document.querySelectorAll('table');
