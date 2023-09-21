@@ -49,9 +49,9 @@
                     <div class="row gx-5 align-items-center">
                         <div class="col-xxl-5">
                             <!-- Header text content-->
-                            <div class="text-center text-xxl-start">
+                            <div class="text-center text-xxl-start py-5">
                                 <div class="fs-2 fw-dark text-muted">Student and aspiring Research Scientist with a focus on</div>
-                                <h1 class="display-2 fw-bolder mb-5"><span class="text-gradient d-inline">Advancing New Technologies</span></h1>
+                                <h1 class="display-2 fw-bolder mb-5"><span class="text-gradient d-inline" id="headerText"></span></h1>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
                                     <a class="btn btn-primary btn-lg px-5 py-3 fs-6 fw-bolder text-white" href="https://digitalstudio.dev/">Projects</a>
                                 </div>
@@ -270,6 +270,18 @@
                 </div>
             </div>
         </footer>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            let typingText = new Typed("#headerText",{
+                strings : ["Quantum Physics Research", "Machine Learning", 
+                            "Building Applications"],
+                loop : true,
+                typeSpeed : 50,
+                backSpeed : 50,
+                backDelay : 1000
+            }
+            );
+        </script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
