@@ -11582,7 +11582,7 @@ html {
   position: relative;
   height: 75vw;
   width: 75vw;
-  border-radius: 5vw;
+  border-radius: 29% 71% 49% 51% / 30% 56% 44% 70% ;
   margin-top: 5vw;
   margin-bottom: 10vw;
   max-height: 40rem;
@@ -11600,11 +11600,11 @@ html {
   }
 }
 .profile .profile-img {
-  height: 75vw;
-  max-height: 45rem;
+  height: 60vw;
+  max-height: 40rem;
   position: absolute;
   bottom: 0;
-  left: 25%;
+  left: 20%;
 }
 
 .profile .dots-1 {
